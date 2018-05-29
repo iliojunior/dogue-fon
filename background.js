@@ -19,7 +19,7 @@ function divImg() {
 
   img.on('load', function () {
     var width = img.css('width').replace('px', '')
-    img.css('margin-left', '0px')
+    img.css('margin-left', '-' + width + 'px')
     img.css('display', 'block')
   })
 
@@ -72,5 +72,5 @@ function finishWithFon() {
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-116582537-1', 'auto');
+ga('create', 'UA-XXXXXXX-X', 'auto');
 ga('send', 'pageview');
